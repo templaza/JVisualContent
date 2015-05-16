@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+    <name>plg_system_jvisualcontent</name>
+    <author>DuongTVTemPlaza</author>
+    <creationDate>August 09th 2014</creationDate>
+    <copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com/</authorUrl>
+    <version>1.0.0</version>
+    <description>PLG_SYSTEM_JVISUALCONTENT_DESCRIPTION</description>
+    <files>
+        <filename plugin="jvisualcontent">jvisualcontent.php</filename>
+        <filename>index.html</filename>
+		<folder>css</folder>
+		<folder>libraries</folder>
+    </files>
+    <languages folder="languages">
+        <language tag="en-GB">en-GB.plg_system_jvisualcontent.ini</language>
+        <language tag="en-GB">en-GB.plg_system_jvisualcontent.sys.ini</language>
+    </languages>
+</extension>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_jvisualcontent</name>
+    <author>DuongTVTemPlaza</author>
+    <creationDate>August 09th 2014</creationDate>
+    <copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
+    <license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
+    <authorEmail>support@templaza.com</authorEmail>
+    <authorUrl>www.templaza.com/</authorUrl>
+    <version>1.0.0</version>
+    <description></description>
+
+    <scriptfile>script.php</scriptfile>
+
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install/install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">install/uninstall.sql</file>
+        </sql>
+    </uninstall>
+
+    <files folder="site">
+        <folder>css</folder>
+        <folder>js</folder>
+        <filename>index.html</filename>
+    </files>
+
+    <administration>
+        <files folder="admin">
+            <folder>controllers</folder>
+            <folder>css</folder>
+            <folder>fonts</folder>
+            <folder>helpers</folder>
+            <folder>images</folder>
+            <folder>includes</folder>
+            <folder>install</folder>
+            <folder>js</folder>
+            <folder>libraries</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>jvisualcontent.php</filename>
+        </files>
+        <languages folder="admin/languages">
+            <language tag="en-GB">en-GB/en-GB.com_jvisualcontent.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_jvisualcontent.sys.ini</language>
+        </languages>
+        <menu>com_jvisualcontent</menu>
+        <submenu>
+            <menu link="option=com_jvisualcontent&amp;view=elements">com_jvisualcontent_elements</menu>
+            <menu link="option=com_jvisualcontent&amp;view=extrafields">com_jvisualcontent_extrafields</menu>
+        </submenu>
+    </administration>
+	<plugins>
+        <plugin plugin="plg_system_jvisualcontent" group="system"/>
+        <plugin plugin="plg_editors-xtd_jvisualcontent" group="editors-xtd"/>
+    </plugins>
+</extension>

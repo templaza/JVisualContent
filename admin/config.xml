@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset name="basic"
+              label="COM_JVISUALCONTENT_COMPONENT_FIELDSET_LABEL"
+              addfieldpath="administrator/components/com_jvisualcontent/models/fields">
+        <!--<field name="context" type="tzcomponents" multiple="true"-->
+               <!--default="['com_tz_portfolio.article','com_content.article']"-->
+               <!--label="COM_JVISUALCONTENT_VIEW_EDITOR_OVERRIDE_LABEL"-->
+               <!--description="COM_JVISUALCONTENT_VIEW_EDITOR_OVERRIDE_DESCRIPTION">-->
+            <!--<option value="">COM_JVISUALCONTENT_ALL_VIEWS</option>-->
+        <!--</field>-->
+    </fieldset>
+    <fieldset name="permissions"
+              label="JCONFIG_PERMISSIONS_LABEL"
+              description="JCONFIG_PERMISSIONS_DESC">
+        <field name="rules" type="rules"
+               label="JCONFIG_PERMISSIONS_LABEL"
+               validate="rules" filter="rules"
+               component="com_jvisualcontent" section="component" />
+    </fieldset>
+</config>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="shortcode_details" addfieldpath="/administrator/components/com_jvisualcontent/models/fields">
+            <field type="tzmedia" name="background_image"
+                   classWindow="tz_sbox-window"
+                   data-name="background_image"/>
+        </fieldset>
+    </fields>
+</form>
